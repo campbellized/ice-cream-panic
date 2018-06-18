@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+config/name="Ice Cream Panic"
+run/main_scene="res://Level0.tscn"
+config/icon="res://icon.png"
+
+[layer_names]
+
+2d_render/layer_1="obstacles"
+2d_physics/layer_1="obstacles"
+2d_render/layer_2="player"
+2d_physics/layer_2="player"
+2d_render/layer_3="mobs"
+2d_physics/layer_3="mobs"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

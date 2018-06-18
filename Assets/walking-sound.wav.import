@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/walking-sound.wav-8c1a74327d6218afe1bdb12b507a6d46.sample"
+
+[deps]
+
+source_file="res://Assets/walking-sound.wav"
+source_md5="44e1672741679430e07dd21a9ddcbe25"
+
+dest_files=[ "res://.import/walking-sound.wav-8c1a74327d6218afe1bdb12b507a6d46.sample" ]
+dest_md5="7504d222586b9cb4d28031dae84e3049"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

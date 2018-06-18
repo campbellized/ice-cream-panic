@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/death-sound.wav-5d224226ed95a0fc41da873f5b21dce0.sample"
+
+[deps]
+
+source_file="res://Assets/death-sound.wav"
+source_md5="28c1d31ed0249886382c8509163be533"
+
+dest_files=[ "res://.import/death-sound.wav-5d224226ed95a0fc41da873f5b21dce0.sample" ]
+dest_md5="3ac4cad51aefa657c8e3b22b8b543a80"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
