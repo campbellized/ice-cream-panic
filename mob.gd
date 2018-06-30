@@ -26,7 +26,7 @@ func _physics_process(delta):
 		else:
 			$Sprite.play("Idle")
 			
-		print(name, " speed is ", speed, " ", speed_modifier)
+#		print(name, " speed is ", speed, " ", speed_modifier)
 		var colliding_info = move_and_collide(velocity.normalized() * (speed + speed_modifier) * delta)
 		
 	else:
@@ -81,5 +81,16 @@ func _on_Mob_mob_death():
 	for mob in mobs:
 		if mob.is_dead == false:
 			survivors += 1
+			
+	if survivors == 1:
+		for mob in mobs:
+			if mob.is_dead == true:
+				var ghostPacked = preload("res://Ghost.tscn")
+				var ghost = ghostPacked.instance()
+				var position = mob.get_position()
+				ghost.set_position(position)
+				get_tree().get_root().add_child(ghost)
+		
 	if survivors == 0:
-		get_tree().change_scene("res://GameOver.tscn")
+#		get_tree().change_scene("res://GameOver.tscn")
+		print("Game Over")
