@@ -18,9 +18,8 @@ func _on_mob_death():
 		
 	if survivors == 0:
 		deactivate_ghosts()
-		get_tree().change_scene("res://GameOver.tscn")
 		Global.score = score
-		print("Game Over")
+		get_tree().change_scene("res://GameOver.tscn")
 
 func _on_ice_cream_used():
 	score += 100 * survivors
