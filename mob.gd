@@ -89,8 +89,13 @@ func _on_Mob_mob_death():
 				var ghost = ghostPacked.instance()
 				var position = mob.get_position()
 				ghost.set_position(position)
+				ghost.add_to_group("Ghosts")
 				get_tree().get_root().add_child(ghost)
 		
 	if survivors == 0:
-#		get_tree().change_scene("res://GameOver.tscn")
-		print("Game Over")
+		var ghosts = get_tree().get_nodes_in_group("Ghosts")
+		
+		for ghost in ghosts:
+			ghost.player = false
+			
+		get_tree().change_scene("res://GameOver.tscn")

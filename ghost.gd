@@ -20,7 +20,11 @@ func _process(delta):
 	var x
 	var y
 	
-	player_position = player.position
+	if player:
+		player_position = player.position
+	else:
+		player_position = Vector2()
+		
 	x = position.x - player_position.x
 	y = position.y - player_position.y
 	
@@ -42,7 +46,8 @@ func _process(delta):
 
 func _on_Collision_body_entered(body):
 	if body.is_in_group("Player"):
-		player.has_ice_cream = 0
+		if player:
+			player.has_ice_cream = 0
 		is_wandering = true
 		$Timer.start()
 
