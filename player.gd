@@ -5,6 +5,9 @@ const SPEED = 200
 var velocity
 var has_ice_cream = 0
 
+func _ready():
+	pass
+
 func _physics_process(delta):
 	velocity = Vector2(0, 0)
 	
@@ -37,16 +40,11 @@ func _physics_process(delta):
 
 func get_ice_cream():
 	self.has_ice_cream = 1
-	$IceCream.stamina = $IceCream.MAX_STAMINA
 	
 func ice_cream_logic():
 	if self.has_ice_cream == 1:
 		$IceCream.show()
 	else: 
-		$IceCream.hide()
-		
-	if $IceCream.stamina == 0:
-		self.has_ice_cream = 0
 		$IceCream.hide()
 	
 func use_ice_cream(mob):
