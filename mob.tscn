@@ -45,7 +45,7 @@ animations = [ {
 } ]
 _sections_unfolded = [ "Resource" ]
 
-[node name="Mob" type="KinematicBody2D" index="0" groups=[
+[node name="Mob" type="KinematicBody2D" groups=[
 "Mobs",
 ]]
 
@@ -88,6 +88,7 @@ autostart = true
 modulate = Color( 0.0627451, 1, 0.866667, 1 )
 frames = SubResource( 3 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="AudioDeath" type="AudioStreamPlayer" parent="." index="5"]
