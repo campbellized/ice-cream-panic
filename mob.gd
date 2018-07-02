@@ -12,6 +12,8 @@ var is_dead = false
 
 func _ready():
 	sprite_color = get_node("Sprite").get_modulate()
+	var level = get_tree().get_current_scene()
+	connect("mob_death", level, "_on_mob_death")
 	
 func _physics_process(delta):
 	if stamina > 0:
@@ -26,7 +28,6 @@ func _physics_process(delta):
 		else:
 			$Sprite.play("Idle")
 			
-#		print(name, " speed is ", speed, " ", speed_modifier)
 		var colliding_info = move_and_collide(velocity.normalized() * (speed + speed_modifier) * delta)
 		
 	else:
@@ -36,11 +37,6 @@ func _physics_process(delta):
 			is_dead = true
 			$AudioDeath.play()
 			emit_signal("mob_death")
-#
-#		if colliding_info:
-#			var collided = colliding_info.collider
-#			if collided.is_in_group("Mobs") || collided.is_in_group("Walls"):
-#				$MoveTimer.start()
 
 func _process(delta):
 	var mobs = get_tree().get_nodes_in_group("Mobs")
@@ -74,28 +70,3 @@ func _on_MoveTimer_timeout():
 	var new_duration = rand_range(0,1)
 	$MoveTimer.wait_time = new_duration
 	movement = calc_movement()
-
-func _on_Mob_mob_death():
-	var mobs = get_tree().get_nodes_in_group("Mobs")
-	var survivors = 0
-	for mob in mobs:
-		if mob.is_dead == false:
-			survivors += 1
-			
-	if survivors == 1:
-		for mob in mobs:
-			if mob.is_dead == true:
-				var ghostPacked = preload("res://Ghost.tscn")
-				var ghost = ghostPacked.instance()
-				var position = mob.get_position()
-				ghost.set_position(position)
-				ghost.add_to_group("Ghosts")
-				get_tree().get_root().add_child(ghost)
-		
-	if survivors == 0:
-		var ghosts = get_tree().get_nodes_in_group("Ghosts")
-		
-		for ghost in ghosts:
-			ghost.player = false
-			
-		get_tree().change_scene("res://GameOver.tscn")

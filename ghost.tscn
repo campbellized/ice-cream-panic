@@ -22,7 +22,7 @@ custom_solver_bias = 0.0
 radius = 14.177
 height = 31.9001
 
-[node name="ghost" type="KinematicBody2D"]
+[node name="ghost" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -35,7 +35,6 @@ script = ExtResource( 1 )
 modulate = Color( 0.0627451, 1, 0.866667, 1 )
 frames = SubResource( 1 )
 animation = "Spooky"
-frame = 2
 playing = true
 _sections_unfolded = [ "Material", "Visibility" ]
 
