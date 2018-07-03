@@ -9,6 +9,7 @@ func _ready():
 	mobs = get_tree().get_nodes_in_group("Mobs")
 	survivors = len(mobs)
 	$Player.connect("ice_cream_used", self, "_on_ice_cream_used")
+	$GUI.connect("timeup", self, "_on_timeup")
 
 func _on_mob_death():
 	survivors -= 1
@@ -17,9 +18,7 @@ func _on_mob_death():
 		summon_ghosts()
 		
 	if survivors == 0:
-		deactivate_ghosts()
-		Global.score = score
-		get_tree().change_scene("res://GameOver.tscn")
+		gameover()
 
 func _on_ice_cream_used():
 	score += 100 * survivors
@@ -40,3 +39,12 @@ func deactivate_ghosts():
 	
 	for ghost in ghosts:
 		ghost.player = false
+		
+func _on_timeup():
+	gameover()
+		
+func gameover():
+	deactivate_ghosts()
+	Global.score = score
+	Global.survivors = survivors
+	get_tree().change_scene("res://GameOver.tscn")
