@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/3.png-d0953124bc740b0a3f9fe9c227a246c7.stex"
 
 [deps]
 
-source_file="res://icon.png"
-source_md5="ae7e641067601e2184afcade49abd283"
+source_file="res://Entities/Sprites/Guy/3.png"
+source_md5="022c6d3ef55deb850f91f495d91fede5"
 
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
-dest_md5="84511021bbc8c9d37c7f0f4d181de883"
+dest_files=[ "res://.import/3.png-d0953124bc740b0a3f9fe9c227a246c7.stex" ]
+dest_md5="5abf709b5b0f47a8ed582e201956c2a8"
 
 [params]
 

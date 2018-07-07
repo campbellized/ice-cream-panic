@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ice-cream.wav-d7abf2d2241a33051f61e600b0c7908d.sample"
+
+[deps]
+
+source_file="res://Sounds/ice-cream.wav"
+source_md5="fd0961bfd7abf5df36a5128646c003aa"
+
+dest_files=[ "res://.import/ice-cream.wav-d7abf2d2241a33051f61e600b0c7908d.sample" ]
+dest_md5="d70960532d7ef122c9237b6b0c85def3"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

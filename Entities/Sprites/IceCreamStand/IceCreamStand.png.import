@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/IceCreamStand.png-d5a633d502b85ba78e61aaa1360aed0b.stex"
 
 [deps]
 
-source_file="res://icon.png"
-source_md5="ae7e641067601e2184afcade49abd283"
+source_file="res://Entities/Sprites/IceCreamStand/IceCreamStand.png"
+source_md5="051e2f7ea4c8c564dc7ecf99d98b323f"
 
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
-dest_md5="84511021bbc8c9d37c7f0f4d181de883"
+dest_files=[ "res://.import/IceCreamStand.png-d5a633d502b85ba78e61aaa1360aed0b.stex" ]
+dest_md5="b35f8e9b32ca99bd3289978c7035c25e"
 
 [params]
 

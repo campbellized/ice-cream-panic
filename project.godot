@@ -11,12 +11,12 @@ config_version=3
 [application]
 
 config/name="Ice Cream Panic"
-run/main_scene="res://Level0.tscn"
+run/main_scene="res://Scenes/Level0.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://Global.tscn"
+Global="*res://Scenes/Global.tscn"
 
 [layer_names]
 

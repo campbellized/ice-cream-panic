@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/sweat-1.png-d835f6bf9487492986353627e1aace5e.stex"
 
 [deps]
 
-source_file="res://icon.png"
-source_md5="ae7e641067601e2184afcade49abd283"
+source_file="res://Entities/Sprites/Guy/sweat-1.png"
+source_md5="9688a338da6d64c698c1ef9be69eb01b"
 
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
-dest_md5="84511021bbc8c9d37c7f0f4d181de883"
+dest_files=[ "res://.import/sweat-1.png-d835f6bf9487492986353627e1aace5e.stex" ]
+dest_md5="a32cf69ce7deae3a9e9fe5ac719984e5"
 
 [params]
 
